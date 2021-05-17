@@ -4,10 +4,7 @@ initialSeed: .half 60
 lfsr:        .half 00
 
 
-.text
-
-main:
-
+.text    
 
 
 firstTime:
@@ -37,6 +34,9 @@ getPseudoRandom:
     la t1,lfsr
     sh t0,(0)t1
     
+    li a7,1
+    add a0,zero,t0
+    ecall
     
     
     
