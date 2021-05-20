@@ -37,6 +37,9 @@ getPseudoRandom:
     
     or t0,t0,t4 #t0 = new lfsr
     
+    li t1,65535
+    and t0,t0,t1 #remove excess bits
+    
     la t1,lfsr
     sh t0,(0)t1
     
