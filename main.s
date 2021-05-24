@@ -8,6 +8,17 @@ lfsr:        .half 00
 .text    
 
 
+main:
+    #s0 => primo elemento della lista
+    #s1 => ultimo elemento della lista
+    
+    
+
+
+
+
+
+
 firstTime:   
     la t0,initialSeed
     la t1,lfsr
@@ -48,6 +59,9 @@ checkFree:
     bne t1,zero,getPseudoRandom #check byte 4 (DATA)
     lw t1,4(t0)
     bne t1,zero,getPseudoRandom #check byte 5-8 (PAHEAD)
+    
+    add a0,t0,zero #save correct address
+    jr ra
     
     
     
