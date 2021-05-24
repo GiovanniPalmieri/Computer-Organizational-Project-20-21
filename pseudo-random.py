@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     lfsr = 60
-    for i in range(1000):
+    for i in range(10):
         newbit = (lfsr >> 0) ^ (lfsr >> 2) ^ (lfsr >> 3) ^ (lfsr >> 5)
         # newbit = newbit % 65535
         #newbit = newbit & 0X0000FFFF
