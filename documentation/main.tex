@@ -1,6 +1,8 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
+\usepackage{float}
+\restylefloat{table}
 
 \title{Relazione progetto Architettura degli elaboratori}
 \author{Giovanni Palmieri (7006086)}
@@ -16,19 +18,6 @@
 Introduzione
 
 
-\section{Descrizione del ciclo principale}
-
-Il compito del ciclo principale \textit{mainLoop} è quello di leggere 
-l'array di input \textit{inputText} e in base ad esso chiamare le funzioni relative ai comandi
-
-\subsection{Riconoscimento input}
-Un comando viene riconosciuto semplicemente dalla prima lettera, dato che non esitono comandi che abbiano la stessa lettera iniziale.
-Perciò un carattere \textbf{A} nella stringa di input può voler dire due cose:
-\begin{enumerate}
-    \item La prima lettera del comando ADD\{...\}
-    \item Il dato di un comando ...\{A\}
-\end{enumerate}
-
-Per distinguere i due casi il programma quando interpreta la prima lettera di un comando {A,D,L,S,R} 
+\include{section1.tex}
 
 \end{document}

@@ -23,8 +23,7 @@ mainLoop:
     beq t0,t1,callRev
     li t1,83
     beq t0,t1,callSort
-    li t1,32
-    blt t0,t1,end
+    beq zero,t0,end
     addi s1,s1,1
     j mainLoop
     

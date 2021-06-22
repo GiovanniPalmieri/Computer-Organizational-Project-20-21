@@ -1,0 +1,79 @@
+\section{Descrizione del ciclo principale}
+
+Il compito del ciclo principale \textit{mainLoop} è quello di leggere 
+l'array di input \textit{listInput} e in base ad esso chiamare le funzioni relative ai comandi
+
+\subsection{Riconoscimento input}
+Un comando viene riconosciuto semplicemente dalla prima lettera, dato che non esitono comandi che abbiano la stessa lettera iniziale.
+\\
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|}
+    \hline
+    Carattere & Significato \\
+    \hline
+    A & ADD\{...\} \\
+    \hline
+    D & DEL\{...\} \\
+    \hline
+    P & PRINT \\
+    \hline
+    S & SORT \\
+    \hline
+    R & REV \\
+    \hline
+\end{tabular}
+\caption{Riconoscimento comandi}
+\label{tab:commandIdentification}
+\end{center}
+\end{table}
+
+Bisogna però considerare il caso in cui, 
+una lettera relativa ad un comando sia in realtà il parametro di un comando, esempio:\\
+\centerline{\textcircled{A}DD\{\textcircled{A}\}} \\
+
+
+Per distunguere questi due casi ci avvaliamo del fatto che:
+\begin{enumerate}
+    \item Il primo carattere che troviamo,relativo ad un comando, non può essere il parametro di un comando.
+    \item Per ogni comando sappiamo quanto è lungo, dato che non sono ammessi spazi all'interno dei comandi.
+\end{enumerate}
+
+Perciò ogni volta che leggiamo un comando,
+ spostiamo il puntatore alla lista di input alla fine del comando. \\
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|}
+    \hline
+    Comando & Valore da sommare \\
+    \hline 
+    ADD & 6 + 1 \\
+    \hline
+    DEL & 6 + 1 \\
+    \hline
+    PRINT & 5 + 1 \\
+    \hline
+    SORT & 4 + 1 \\
+    \hline
+    REV & 3 + 1 \\
+    \hline
+\end{tabular}
+\caption{Tabella valori da sommare per evitare 
+letture incorrette}
+\label{tab:valoriDaSommare}
+\end{center}
+\end{table}
+
+Il "+1" in Tabella\ref{tab:valoriDaSommare} ci 
+permette di risparmiare la validazione di un char,
+ dato che i comandi sono divisi da almeno un "\~" 
+ e eventuali spazi.
+
+\subsection{Chiamata delle operazioni}
+Ogni volta che viene riconosciuto un comando, viene eseguita una jump al blocco di codice che gestisce la
+chiamata al relativo comando.\\
+(\textit{callAdd}, \textit{callDel}, \textit{callSort}, \textit{callRev}, \textit{callPrint})
+
+Prima di ogni chiamata vengono salvati i registri nello stack, e in caso di comandi
+con un parametro (\textit{ADD}, \textit{DEL}), il parametro viene messo in \textbf{a0}.
+Poi viene incrementato il puntatore alla stringa di input secondo la Tabella \ref{tab:valoriDaSommare}

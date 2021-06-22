@@ -1,5 +1,6 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \contentsline {section}{\numberline {1}Introduzione}{1}{}%
-\contentsline {section}{\numberline {2}Descrizione del ciclo principale}{1}{}%
-\contentsline {subsection}{\numberline {2.1}Riconoscimento input}{1}{}%
+\contentsline {section}{\numberline {2}Descrizione del ciclo principale}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Riconoscimento input}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Chiamata delle operazioni}{3}{}%
