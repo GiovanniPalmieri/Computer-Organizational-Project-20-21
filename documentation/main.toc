@@ -4,11 +4,19 @@
 \contentsline {section}{\numberline {2}Descrizione del ciclo principale}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Riconoscimento input}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Chiamata delle operazioni}{3}{}%
-\contentsline {section}{\numberline {3}Implementazione Sort}{4}{}%
+\contentsline {section}{\numberline {3}Descrizione Add}{4}{}%
 \contentsline {paragraph}{Descrizione}{4}{}%
 \contentsline {paragraph}{Implementazione}{4}{}%
-\contentsline {subsection}{\numberline {3.1}Funzione getMinAddress}{4}{}%
-\contentsline {subsection}{\numberline {3.2}Funzione sort}{4}{}%
-\contentsline {subsection}{\numberline {3.3}Criteri di ordinamento}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Funzione getPseudoRandom}{4}{}%
+\contentsline {paragraph}{Descrizione}{4}{}%
+\contentsline {section}{\numberline {4}Implementazione Sort}{5}{}%
 \contentsline {paragraph}{Descrizione}{5}{}%
 \contentsline {paragraph}{Implementazione}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Funzione getMinAddress}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Funzione sort}{5}{}%
+\contentsline {subsection}{\numberline {4.3}Criteri di ordinamento}{6}{}%
+\contentsline {paragraph}{Descrizione}{6}{}%
+\contentsline {paragraph}{Implementazione}{6}{}%
+\contentsline {subsection}{\numberline {4.4}Funzione swap}{7}{}%
+\contentsline {paragraph}{Descrizione}{7}{}%
+\contentsline {paragraph}{Implementazione}{7}{}%

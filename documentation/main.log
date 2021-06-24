@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.21)  24 JUN 2021 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.21)  24 JUN 2021 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -82,7 +82,7 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count268
 \l__pdf_internal_box=\box51
-) (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/section1.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux))
+) (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/sectionMainCycle.aux) (/home/giova/university/ade/project/documentation/sectionAdd.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -129,9 +129,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `section1.aux'.
+\openout2 = `sectionMainCycle.aux'.
 
- (/home/giova/university/ade/project/documentation/section1.tex
+ (/home/giova/university/ade/project/documentation/sectionMainCycle.tex
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 15.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -156,6 +156,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--65
 [2
 
 ]) [3]
+\openout2 = `sectionAdd.aux'.
+
+ (/home/giova/university/ade/project/documentation/sectionAdd.tex) [4
+
+
+
+]
 \openout2 = `sectionSort.aux'.
 
  (/home/giova/university/ade/project/documentation/sectionSort.tex
@@ -182,24 +189,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[4
+[5
 
 
 
-]) [5] (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/section1.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux)) ) 
+] [6]) [7] (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/sectionMainCycle.aux) (/home/giova/university/ade/project/documentation/sectionAdd.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux)) ) 
 Here is how much of TeX's memory you used:
- 3436 strings out of 478994
- 48033 string characters out of 5864751
- 555745 words of memory out of 5000000
- 20918 multiletter control sequences out of 15000+600000
+ 3448 strings out of 478994
+ 48569 string characters out of 5864751
+ 556042 words of memory out of 5000000
+ 20923 multiletter control sequences out of 15000+600000
  409282 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,8n,60p,261b,1359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,8n,60p,269b,1359s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/giova/university/ade/project/documentation/main.pdf (5 pages, 84080 bytes).
+Output written on /home/giova/university/ade/project/documentation/main.pdf (7 pages, 88746 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

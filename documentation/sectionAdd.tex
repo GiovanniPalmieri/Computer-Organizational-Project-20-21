@@ -1,0 +1,18 @@
+\section{Descrizione Add}
+\paragraph{Descrizione}
+Il comando Add, aggiunge un nodo in coda alla lista, (ossia come ultimo elemento). 
+Dato che la lista è una lista concatenata deve essere allocato dinamicamente lo spazione per l'ultimo elemento.
+
+\paragraph{Implementazione}
+In base all'implementazione della lista concatenata l'operazione per eseguire la Add è diversa.
+Nel caso del programma non abbiamo un puntatore alla coda, perciò la prima fase della Add è trovare l'ultimo elemento.
+La ricerca dell'ultimo elemento viene effettuata scorrendo la lista, finchè non si trova un nodo che non ha il punatore al prossimo elemento.
+A questo punto deve essere allocata un area libera di memoria, e ci viene messo il dato da aggiungere.
+Dopo di che viene aggiornato il puntatore all'elemento successivo del penutlimo elemento, 
+e i puntatori all'elemento precedente e successivo dell'ultimo elemento.
+È inoltre necessario distunguere il caso in cui la lista sia vuota e inizializzare il puntatore al primo elmento.
+
+\subsection{Funzione getPseudoRandom}
+\paragraph{Descrizione}
+Come abbiamo detto nella descrizione dell'operazione è necessario trovare un area libera di memoria.
+Per fare ciò usiamo un generatore di numeri pseudorandomici. 

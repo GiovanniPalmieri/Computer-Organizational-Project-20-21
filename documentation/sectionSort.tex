@@ -68,3 +68,41 @@ Lettere Maiuscole $>$ Letter Minuscole $>$ Numeri $>$ Resto.
 \\
 Per fare questa funzione quello che facciamo è sommare un certo valore in base al gruppo di apparentenza di un carattere.
 
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            Caratteri & Valore ASCII & Valore da sommare & Valore restituito \\
+            \hline
+            A-Z & 65-90 & 97 & 162-187 \\
+            \hline
+            a-z & 97-122 & 39 & 136-161 \\
+            \hline
+            1-9 & 48-57 & 78 & 126-135 \\
+            \hline
+            Resto & 32-125 & 0 & 32-125 \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{Tabella valore ordinamento}
+    \label{tab:orderingValue}
+\end{table}
+
+
+Come possiamo vedere da Tabella \ref{tab:orderingValue} il valore restituito dopo la somma permette
+di determinare facilmente l'ordine degli elementi.
+
+Per semplicità di utilizzo la funzione \textit{getOrderValue} prende due elementi per volta (\textbf{a0},\textbf{a1}),
+dato che ogni volta che la chiamiamo dobbiamo eseguire un confronto tra due elementi.
+Essa ritorna il valore di ordinamento dei due elementi (\textbf{a0},\textbf{a1}). 
+
+\subsection{Funzione swap}
+
+\paragraph{Descrizione}
+ La funzione \textit{swap} scambia di posizione due elementi della lista.
+\paragraph{Implementazione} 
+La funzione ha come parametri (\textbf{a0},\textbf{a1}) gli indirizzi dei due nodi.
+Essa legge il dato di ogni nodo e scrive il valore del primo nel secondo e viceversa.
+Lo scambio del dato permette di eseguire lo scambio eseguendo due scritture e due letture.
+Un Implementazione che scambia gli indirizzi sarebbe più costosa dato che bisognerebbe cambiare anche gli indirizzi dei nodi adiacenti.
+
