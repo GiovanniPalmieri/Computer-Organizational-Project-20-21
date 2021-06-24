@@ -1,0 +1,70 @@
+\section{Implementazione Sort}
+
+\paragraph{Descrizione}
+L'algoritmo utilizzato è un selection sort. 
+L'algoritmo scorre tutta la lista, e ad ogni elemento lo sostituisce
+ con l'elemento più piccolo, tra quelli successivi.
+
+\paragraph{Implementazione}
+L'algoritmo è composto principalmente da due funzione. 
+\begin{enumerate}
+    \item \label{func:getMinAddress}La funzione che trova il minimo tra i nodi successivi: \textit{getMinAddress}
+    \item \label{func:sort}La funzione che per ogni nodo lo scambia con il risultato di \\getMinAdress: \textit{sort}
+\end{enumerate}
+Entrambe le funzioni sono implementate ricorsivamente.
+\subsection{Funzione getMinAddress}
+La funzione getMinAddress ha due parametri, 
+\textbf{a0} è l'indirizzo del nodo corrente, \textbf{a1} è l'indirizzo del nodo con il valore minimo.
+La funzione confronta i valori dei due nodi, se il nodo corrente è minore del minimo allora il nodo minimo diventa il nodo corrente.
+Dopo di che, controlla se il nodo corrente ha un nodo successivo, in caso non ci sia la funzione ritorna. Mentre se il nodo successivo è presente
+la funzione si richiama sostituendo al nodo corrente il nodo successivo.
+\\
+
+\begin{lstlisting}[language=java,caption={Codice java algoritmo getMinAddress},captionpos=b] 
+    private Node getMinAddress(Node current, Node min){
+        if(current.getValue() < min.getValue()){
+            min = current;
+        }
+        if(current.getNext() != null){
+            min = getMinAddress(current.getNext(), min);
+        }
+    }
+
+
+\end{lstlisting}
+
+\subsection{Funzione sort}
+La funzione sort ha un solo parametro, \textbf{a0} l'indirizzo nodo da sostituire con il minimo.
+La funzione chiama \textit{getMinAddress} sul nodo corrente, e lo scambia con il risultato della funzione.
+Dopo di che, controlla che ci sia il nodo successivo e in caso sia presente richiama la funzione \textit{sort} sul prossimo nodo.
+\\
+\begin{lstlisting}[language=java,caption={Codice java algoritmo sort}, captionpos=b]
+    private void sort(Node current){
+        Node min = getMinAddress(current, current);
+        swap(current, min);
+        if(current.getNext() != null){
+            sort(current.getNext());
+        }
+    }
+    
+\end{lstlisting}
+
+\subsection{Criteri di ordinamento}
+\paragraph{Descrizione}
+Il programma non ordina i nodi in base al valore ASCII, ma ha un ordinamento specifico:
+\begin{itemize}
+    \item Lettere Maiuscole ASCII(da 65 a 90 compresi)
+    \item Lettere Minuscole ASCII(da 97 a 122 compresi)
+    \item Numeri ASCII(da 48 a 57 compresi)
+    \item Tutti gli altri simboli
+\end{itemize}
+All'interno dei gruppi gli elementi sono ordinati in base al loro valore ASCII.
+
+\paragraph{Implementazione}
+Per fare questo ordinamento associamo ad ogni valore ASCII un valore di ordinamento, 
+di modo che gli elementi possano essere ordinati in base al loro valore di ordinamento.
+Abbiamo perciò bisogno di una funzione che associa un numero ad ogni carattere di modo che:\\
+Lettere Maiuscole $>$ Letter Minuscole $>$ Numeri $>$ Resto.
+\\
+Per fare questa funzione quello che facciamo è sommare un certo valore in base al gruppo di apparentenza di un carattere.
+

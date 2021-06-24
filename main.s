@@ -2,7 +2,7 @@
 .data 
 initialSeed: .half 60
 lfsr:        .half 00
-listInput:    .string "ADD{b}~  ADD{a}  ~ADD{B}~ADD{A}~ADD{3}~ADD{2}~ADD{C}~ADD{c}~ADD{1}~PRINT~SORT~PRINT~~"
+listInput:    .string "ADD{1} ~ ADD{a} ~ ADD{a} ~ ADD{B} ~ ADD{;} ~ ADD{9} ~PRINT~SORT~PRINT~DEL{b} ~DEL{B}~PRINT~REV~PRINT"
 
 .text    
 
@@ -28,62 +28,113 @@ mainLoop:
     j mainLoop
     
 callSort:
-    #per prima cosa devo contare gli elementi in s2
-    add s2,zero,zero
-    add t0,s0,zero
-    j countLoop
-    
-incrementCountLoop:  
-    add t0,t1,zero  
-countLoop:
-    addi s2,s2,1
-    lw t1,5(t0)
-    li t2,-1
-    bne t1,t2,incrementCountLoop
-    #finito di contare
-    addi s2,s2,-1 #il bubble sort deve girare count-1 volte
-sortMainCycle:
-    #per ogni elemento devo fare un ciclo di sorting
-    addi s2,s2,-1
-    jal bubbleSort
-    bne s2,zero,sortMainCycle
-    j exitSort
-
-exitSort: 
+    add a0,s0,zero
+    li a1,256
+    jal sort
     addi s1,s1,5
-    j mainLoop  
+    j mainLoop
+            
+sort:
+    #a0 = indirizzo del nodo da sostituire con il minimo
+    #adesso devo chiamare la funzione getMinAddress che mi resistuisce il nodo con valore minimo 
+    addi sp, sp,-8
+    sw a0,0(sp)
+    sw ra,4(sp)
     
-bubbleSort:
-    add t0,s0,zero #in t0 metto il puntatore al primo elemento
-loopBubbleSort:
-    lw t1,5(t0) #in t1 metto il puntatore all'elemento successivo
-    li t2,-1
-    beq t2,t1,exitBubbleSort #se sono alla fine esco
-    #altrimenti confronto gli elementi
-    #salvo i registri nello stack
+    #preparo i valori per la chiamata
+    add a1,a0,zero #metto l'indirizzo del nodo corrente in a1, dato che lo considero come il minimo a questo punto
+    
+    jal getMinAddress
+    add t0,a0,zero # metto l'indirizzo del nodo più piccolo in t0
+    
+    lw a0,0(sp)
+    lw ra,4(sp)
+    addi sp,sp,8
+    
+    #a questo punto posso chiamare la funzione swap per cambiare il nodo corrente con il minimo
     addi sp,sp,-12
-    sw t0,0(sp)
-    sw t1,4(sp)
+    sw a0,0(sp)
+    sw t0,4(sp)
     sw ra,8(sp)
+    #preparo i parametri
+    add a1,t0,zero
     
-    add a0,t0,zero
-    add a1,t1,zero
- 
     jal swap
     
-    lw t0,0(sp)
-    lw t1,4(sp)
+    lw a0,0(sp)
+    lw t0,4(sp)
     lw ra,8(sp)
     addi sp,sp,12
     
-    add t0,t1,zero #punto all'elemento successivo e continuo il ciclo
-    j loopBubbleSort
+    #a questo punto se ci sono altri nodi dopo richiamo la funzione sul nodo successivo
+    lw t0,5(a0) # in t0 ho il puntatore al nodo successivo
+    li t1,-1
+    beq t0,t1,sortExit
     
+    add a0,t0,zero
+     
+    addi sp,sp,-4
+    sw ra,0(sp)
     
-exitBubbleSort:
+    jal sort
+    
+    lw ra,0(sp)
+    addi sp,sp,4
+    
+sortExit:
     jr ra
     
     
+getMinAddress:
+    #a0 currentNode, #a1 currentMinimumAddress
+    #controllo che il nodo corrente sia maggiore del currentMinimumAddress
+    lb t0,4(a0)
+    lb t1,4(a1)
+    #chiamo getOrderValue
+    addi sp,sp,-12
+    sw a0,0(sp)
+    sw a1,4(sp)
+    sw ra,8(sp)
+    #preparo gli argomneti
+    add a0,t0,zero
+    add a1,t1,zero
+    
+    jal getOrderValue
+    
+    add t0,a0,zero
+    add t1,a1,zero
+    
+    lw a0,0(sp)
+    lw a1,4(sp)
+    lw ra,8(sp)
+    addi sp,sp,12
+    #adesso in t0 e t1 ho il valore di ordinamento
+    bgt t0,t1,getMinAddressSkipSwap
+    #se t0 è minore di t1 allora il nuovo corrente è il nuovo minimo
+    add a1,a0,zero
+getMinAddressSkipSwap:
+    #a questo punto se esiste la chiamo per il prossimo nodo
+    lw t0,5(a0) #puntatore al prossimo elemento
+    #se non c'è il prossimo elemento ritorno
+    li t1,-1
+    beq t0,t1,getMinAddressReturn
+    #se la lista non è finita devo chiamarla per il prossimo valore
+    #preparo gli argomenti
+    add a0,t0,zero
+    addi sp,sp,-4
+    sw ra,0(sp)
+    
+    jal getMinAddress
+    
+    lw ra,0(sp)
+    addi sp,sp,4
+    
+    add a1,a0,zero #metto il valore minimo in a1 e ritorno
+        
+getMinAddressReturn:
+    #la funzione ritorna in a0 il valore minimo
+    add a0,a1,zero
+    jr ra  
     
     
 swap: #a0 first node, a1 second node
@@ -91,30 +142,6 @@ swap: #a0 first node, a1 second node
     lb t0,4(a0) 
     lb t1,4(a1)
     
-    addi sp,sp,-20
-    sw a0,0(sp)
-    sw a1,4(sp)
-    sw t0,8(sp)
-    sw t1,12(sp)
-    sw ra,16(sp)
-
-    add a0,t0,zero
-    add a1,t1,zero
-    
-    jal getOrderValue
-    
-    add t2,a0,zero
-    add t3,a1,zero
-    
-    lw a0,0(sp)
-    lw a1,4(sp)
-    lw t0,8(sp)
-    lw t1,12(sp)
-    lw ra,16(sp)
-    addi sp,sp,20
-    
-    bge t3,t2,swapReturn #se il secondo valore è più grande del primo non è necessario fare lo swap
-    #non sono in ordine percio scambio i valori
     sb t0,4(a1)
     sb t1,4(a0)
     
@@ -353,6 +380,25 @@ checkFree:
     add a0,t0,zero #save correct address
     jr ra
     
+    
+getItemCount:
+    #a0 -> firstElementAddress
+    #controllo che non sia vuota
+    add t0,t0,zero
+    beq a0,zero,getItemCountReturn
+    #se non è vuoto inizio a contare
+getItemCountLoop:
+    addi t0,t0,1
+    li t1,-1 #t1 = 0xffffffff
+    lw t2,5(a0) # leggo il puntatore al prossimo elemento
+    beq t1,t2,getItemCountReturn # se non c'è il prossimo elemento ritorno
+    add a0,t2,zero # metto in a0 il puntatore al prossimo elemento
+    j getItemCountLoop
+    
+getItemCountReturn:
+    add a0,t0,zero #ritorno t0
+    jr ra
+
     
 end:
     add t0,t0,zero
