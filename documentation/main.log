@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.21)  24 JUN 2021 15:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.21)  25 JUN 2021 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -158,11 +158,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--65
 ]) [3]
 \openout2 = `sectionAdd.aux'.
 
- (/home/giova/university/ade/project/documentation/sectionAdd.tex) [4
+ (/home/giova/university/ade/project/documentation/sectionAdd.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Underfull \hbox (badness 10000) in paragraph at lines 20--30
+
+ []
+
+[4
 
 
 
-]
+]) [5]
 \openout2 = `sectionSort.aux'.
 
  (/home/giova/university/ade/project/documentation/sectionSort.tex
@@ -170,11 +177,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--22
 
  []
 
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 25.
- (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
@@ -189,24 +193,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-[5
+[6
 
 
 
-] [6]) [7] (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/sectionMainCycle.aux) (/home/giova/university/ade/project/documentation/sectionAdd.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux)) ) 
+] [7]) [8] (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/sectionMainCycle.aux) (/home/giova/university/ade/project/documentation/sectionAdd.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux)) ) 
 Here is how much of TeX's memory you used:
- 3448 strings out of 478994
- 48569 string characters out of 5864751
- 556042 words of memory out of 5000000
- 20923 multiletter control sequences out of 15000+600000
+ 3455 strings out of 478994
+ 48658 string characters out of 5864751
+ 557066 words of memory out of 5000000
+ 20930 multiletter control sequences out of 15000+600000
  409282 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,8n,60p,269b,1359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,8n,60p,269b,1639s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/giova/university/ade/project/documentation/main.pdf (7 pages, 88746 bytes).
+Output written on /home/giova/university/ade/project/documentation/main.pdf (8 pages, 91308 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

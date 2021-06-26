@@ -9,14 +9,15 @@
 \contentsline {paragraph}{Implementazione}{4}{}%
 \contentsline {subsection}{\numberline {3.1}Funzione getPseudoRandom}{4}{}%
 \contentsline {paragraph}{Descrizione}{4}{}%
-\contentsline {section}{\numberline {4}Implementazione Sort}{5}{}%
-\contentsline {paragraph}{Descrizione}{5}{}%
-\contentsline {paragraph}{Implementazione}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Funzione getMinAddress}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Funzione sort}{5}{}%
-\contentsline {subsection}{\numberline {4.3}Criteri di ordinamento}{6}{}%
+\contentsline {paragraph}{Implementazione}{4}{}%
+\contentsline {section}{\numberline {4}Implementazione Sort}{6}{}%
 \contentsline {paragraph}{Descrizione}{6}{}%
 \contentsline {paragraph}{Implementazione}{6}{}%
-\contentsline {subsection}{\numberline {4.4}Funzione swap}{7}{}%
+\contentsline {subsection}{\numberline {4.1}Funzione getMinAddress}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Funzione sort}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Criteri di ordinamento}{7}{}%
 \contentsline {paragraph}{Descrizione}{7}{}%
 \contentsline {paragraph}{Implementazione}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Funzione swap}{8}{}%
+\contentsline {paragraph}{Descrizione}{8}{}%
+\contentsline {paragraph}{Implementazione}{8}{}%

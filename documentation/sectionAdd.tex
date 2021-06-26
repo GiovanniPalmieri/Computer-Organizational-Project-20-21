@@ -16,3 +16,27 @@ e i puntatori all'elemento precedente e successivo dell'ultimo elemento.
 \paragraph{Descrizione}
 Come abbiamo detto nella descrizione dell'operazione è necessario trovare un area libera di memoria.
 Per fare ciò usiamo un generatore di numeri pseudorandomici. 
+\paragraph{Implementazione}
+Per generare il numero pseduo random usiamo l'LFSR (Linear-Feedback Shift Register). 
+Che permette di generare un numero pseudo casuale eseguendo uno shift a destra e sostituendo il bit vuoto 
+con il risultato di una XOR dei bit.
+Per funzionare abbiamo bisogno di un \textbf{seed}, ossia di un valore iniziale. La prima volta che viene chiamata il seed 
+viene impostato come valore corrente. Poi il \textbf{newBit} vine calcolato eseguendo lo xor tra il primo,
+terzo, quarto e quinto bit. A questo punto si esegue lo shift a destra del valore corrente e si sostituisce il bit 
+più valente con il \textbf{newBit}. Quest'operazione viene fatta su 16 bit, dato che risv-v usa 4 byte per indirizzare la memoria,
+ ci restano i due byte più valenti da riempire. Per evitare overflow e/o sovrascritture di dati esistenti
+impostiamo i due byte a 0x00001.   
+\\
+\begin{lstlisting}[language=java,caption={Codice java algoritmo generazione psudo-casuale}, captionpos=b]
+
+    bool firstInvocation = true;
+    String seed = "0001011000111010";
+    String lfsr;
+    private void getPseudoRandom(){
+        if(firstInvocation){
+            lfsr = seed;
+        }
+        char newBit = 
+    }
+    
+\end{lstlisting}
