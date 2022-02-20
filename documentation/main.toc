@@ -24,3 +24,4 @@
 \contentsline {section}{\numberline {5}Descrizione Delete}{9}{}%
 \contentsline {paragraph}{Descrizione}{9}{}%
 \contentsline {paragraph}{Implementazione}{9}{}%
+\contentsline {paragraph}{nota}{9}{}%

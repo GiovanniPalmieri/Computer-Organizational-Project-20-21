@@ -2,7 +2,8 @@
 .data 
 initialSeed: .half 60
 lfsr:        .half 00
-listInput:    .string "ADD{1} ~ ADD{a} ~ ADD{a} ~ ADD{B} ~ ADD{;} ~ ADD{9} ~PRINT~SORT~PRINT~DEL{b} ~DEL{B}~PRINT~REV~PRINT"
+#listInput:    .string "ADD{1} ~ DEL{1} ~ ADD{a} ~ ADD{a} ~ ADD{B} ~ ADD{;} ~ ADD{9} ~PRINT~SORT~PRINT~DEL{b} ~DEL{B}~PRINT~REV~PRINT"
+listInput: .string "DEL{c} ~ PRINT ~ ADD{C} ~PRINT~ DEL{C} ~ ADD{A} ~ ADD{B} ~ ADD{C} ~ PRINT ~ DEL{A}~PRINT~ADD{A}~DEL{B}~PRINT~DEL{C}~PRINT"
 
 .text    
 
@@ -251,21 +252,36 @@ loopDel:
     j loopDel
       
 removeValue:
-    lw t1,5(t0) #leggo il puntatore per controllare se è l'ultimo
+    lw t1,5(t0) #leggo il puntatore al nodo successivo
+    lw t4,0(t0) #leggo il puntatore al nodo precedente
     li t3,-1
-    beq t3,t1,removeLast
-    #non è l'ultimo valore
-    lw t2,0(t0)
+    beq t3,t1,removeLast 
+    #controllo se è il primo valore
+    beq t3,t4,removeFirst
+    #elemento nel mezzo
     #t0 nodo da rimuovere
     #t1 nodo successivo
-    #t2 nodo precedente
-    sw t1,5(t2)
-    sw t2,0(t1)
+    #t4 nodo precedente
+    sw t1,5(t4)
+    sw t4,0(t1)
+    j exitDel
+  
+removeFirst:
+    add s0,t1,zero #aggiorno il puntatore al primo elemento della lista
+    sw t3,0(t1) #aggiorno il puntatore all'elemento precedente del primo elemento
     j exitDel
     
 removeLast:
+    #il puntatore al nodo successivo è -1, controllo il precedente
+    
+    beq t4,t3,deleteList 
     lw t2,0(t0) #t2 nodo precentene
     sw t3,5(t2) #t2 è il fine
+    j exitDel
+
+deleteList:
+    #è l'unico elemento della lista
+    add s0,zero,zero
     j exitDel
 
 exitDel:
