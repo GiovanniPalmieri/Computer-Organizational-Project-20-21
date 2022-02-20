@@ -21,3 +21,6 @@
 \contentsline {subsection}{\numberline {4.4}Funzione swap}{8}{}%
 \contentsline {paragraph}{Descrizione}{8}{}%
 \contentsline {paragraph}{Implementazione}{8}{}%
+\contentsline {section}{\numberline {5}Descrizione Delete}{9}{}%
+\contentsline {paragraph}{Descrizione}{9}{}%
+\contentsline {paragraph}{Implementazione}{9}{}%

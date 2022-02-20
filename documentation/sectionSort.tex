@@ -6,7 +6,7 @@ L'algoritmo scorre tutta la lista, e ad ogni elemento lo sostituisce
  con l'elemento più piccolo, tra quelli successivi.
 
 \paragraph{Implementazione}
-L'algoritmo è composto principalmente da due funzione. 
+L'algoritmo è composto principalmente da due funzioni. 
 \begin{enumerate}
     \item \label{func:getMinAddress}La funzione che trova il minimo tra i nodi successivi: \textit{getMinAddress}
     \item \label{func:sort}La funzione che per ogni nodo lo scambia con il risultato di \\getMinAdress: \textit{sort}
@@ -103,6 +103,18 @@ Essa ritorna il valore di ordinamento dei due elementi (\textbf{a0},\textbf{a1})
 \paragraph{Implementazione} 
 La funzione ha come parametri (\textbf{a0},\textbf{a1}) gli indirizzi dei due nodi.
 Essa legge il dato di ogni nodo e scrive il valore del primo nel secondo e viceversa.
-Lo scambio del dato permette di eseguire lo scambio eseguendo due scritture e due letture.
-Un Implementazione che scambia gli indirizzi sarebbe più costosa dato che bisognerebbe cambiare anche gli indirizzi dei nodi adiacenti.
+Scambiando il dato dei nodi dobbiamo effettuare 2 letture e 2 scritture, mentre se volessimo
+scambiare i puntatori dovremmo effettuare ben 6 letture e 6 scritture, dato che dovremmo cambiare i due puntatori 
+dei due nodi interessati e il puntatore al prossimo elemento dell'elemento precedente e il puntatore all'elemento precedente 
+dell'elemento successivo. Come mostrato in Figura~\ref{fig:swap}. Pertanto dato che il dato è di un solo byte, mentre
+i puntatori sono una word ciuascuno conviene scambiare i dati e lasciare i puntatori intatti.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.4]{diagrams/swap.png}
+    \caption{Prima e dopo ordinamento con scambio di puntatori}
+    \label{fig:swap}
+\end{figure}
+
 

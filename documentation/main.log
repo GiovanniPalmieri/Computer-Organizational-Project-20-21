@@ -1,106 +1,122 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.21)  25 JUN 2021 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.1)  20 FEB 2022 15:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/giova/university/ade/project/documentation/main.tex
-(/home/giova/university/ade/project/documentation/main.tex
+**/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.tex
+(/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (/usr/share/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2021-01-09> xparse <2020-03-03> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@section=\count180
-\c@subsection=\count181
-\c@subsubsection=\count182
-\c@paragraph=\count183
-\c@subparagraph=\count184
-\c@figure=\count185
-\c@table=\count186
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
-) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/03/24 3.56 The Babel package
- (/usr/share/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count187
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/01/26 3.53 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/01/26 3.53 Babel common definitions
+\babel@savecnt=\count185
 \U@D=\dimen139
-\l@babelnohyphens=\language87
- (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\l@babelnohyphens=\language86
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count188
- (/usr/share/texmf-dist/tex/generic/babel-italian/italian.ldf
+\bbl@dirlevel=\count186
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
-\it@lettering=\count189
-\it@doublequoteactive=\count190
-\it@ISOcompliance=\count191
-)) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+\it@lettering=\count187
+\it@doublequoteactive=\count188
+\it@ISOcompliance=\count189
+)) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count192
-) (/usr/share/texmf-dist/tex/latex/float/float.sty
+\etb@tempcnta=\count190
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count193
+\c@float@type=\count191
 \float@exts=\toks17
 \float@box=\box47
 \@float@everytoks=\toks18
 \@floatcapt=\box48
-) (/usr/share/texmf-dist/tex/latex/listings/listings.sty (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-\lst@mode=\count194
+\lst@mode=\count192
 \lst@gtempboxa=\box49
 \lst@token=\toks20
-\lst@length=\count195
+\lst@length=\count193
 \lst@currlwidth=\dimen140
-\lst@column=\count196
-\lst@pos=\count197
+\lst@column=\count194
+\lst@pos=\count195
 \lst@lostspace=\dimen141
 \lst@width=\dimen142
-\lst@newlines=\count198
-\lst@lineno=\count199
+\lst@newlines=\count196
+\lst@lineno=\count197
 \lst@maxwidth=\dimen143
- (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count266
-\lst@skipnumbers=\count267
+\c@lstnumber=\count198
+\lst@skipnumbers=\count199
 \lst@framebox=\box50
-) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+)
 \@float@every@table=\toks21
- (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count268
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count266
 \l__pdf_internal_box=\box51
-) (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/sectionMainCycle.aux) (/home/giova/university/ade/project/documentation/sectionAdd.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux))
+) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.aux (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionDel.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Info: Redefining \it@ocap on input line 11.
-LaTeX Info: Redefining \it@ccap on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Info: Redefining \it@ocap on input line 12.
+LaTeX Info: Redefining \it@ccap on input line 12.
 
 
 File italian.ldf warning: 
@@ -108,14 +124,33 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 11.
+italian.ldf    on input line 12.
 
-\c@lstlisting=\count269
+\c@lstlisting=\count267
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen146
+\scratchbox=\box52
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen147
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 13.
+(Font)              <14.4> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
-(/home/giova/university/ade/project/documentation/main.toc
+(Font)              <7> on input line 14.
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -131,9 +166,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `sectionMainCycle.aux'.
 
- (/home/giova/university/ade/project/documentation/sectionMainCycle.tex
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.tex
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 15.
- (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -158,7 +193,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--65
 ]) [3]
 \openout2 = `sectionAdd.aux'.
 
- (/home/giova/university/ade/project/documentation/sectionAdd.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Underfull \hbox (badness 10000) in paragraph at lines 20--30
@@ -172,13 +207,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--30
 ]) [5]
 \openout2 = `sectionSort.aux'.
 
- (/home/giova/university/ade/project/documentation/sectionSort.tex
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.tex
 Underfull \hbox (badness 10000) in paragraph at lines 16--22
 
  []
 
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 25.
-(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
@@ -197,20 +232,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
 
 
-] [7]) [8] (/home/giova/university/ade/project/documentation/main.aux (/home/giova/university/ade/project/documentation/sectionMainCycle.aux) (/home/giova/university/ade/project/documentation/sectionAdd.aux) (/home/giova/university/ade/project/documentation/sectionSort.aux)) ) 
+] [7]
+<diagrams/swap.png, id=32, 783.92876pt x 229.85875pt>
+File: diagrams/swap.png Graphic file (type png)
+<use diagrams/swap.png>
+Package pdftex.def Info: diagrams/swap.png  used on input line 115.
+(pdftex.def)             Requested size: 313.56595pt x 91.94186pt.
+) [8 </home/giovanni/university/Computer-Organizational-Project-20-21/documentation/diagrams/swap.png>]
+\openout2 = `sectionDel.aux'.
+
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionDel.tex) [9
+
+
+
+] (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.aux (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionDel.aux)) ) 
 Here is how much of TeX's memory you used:
- 3455 strings out of 478994
- 48658 string characters out of 5864751
- 557066 words of memory out of 5000000
- 20930 multiletter control sequences out of 15000+600000
+ 4245 strings out of 479304
+ 61416 string characters out of 5869780
+ 559163 words of memory out of 5000000
+ 21387 multiletter control sequences out of 15000+600000
  409282 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,8n,60p,269b,1639s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/giova/university/ade/project/documentation/main.pdf (8 pages, 91308 bytes).
+ 68i,8n,74p,298b,1639s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on /home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.pdf (9 pages, 97633 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

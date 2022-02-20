@@ -1,0 +1,15 @@
+\section{Descrizione Delete}
+
+\paragraph{Descrizione}
+Il comando Del, rimuove il primo nodo il cui valore è uguale al parametro passato,
+se esiste, altrimenti non altera la lista.
+
+\paragraph{Implementazione}
+La funzione scorre tutta la lista finchè non arriva alla fine, oppure finchè non trova
+un nodo con il valore da cancellare. Una volta trovato il nodo si distunguono due casi:
+\begin{itemize}
+    \item Il nodo è l'ultimo nodo della lista, in questo caso si imposta il valore 
+    del penultimo nodo a -1, in questo modo diventa l'ultimo.
+    \item Il nodo non è l'ultimo nodo della lista, in questo caso dobbiamo impostare 
+    i puntatori del nodo precedente e del nodo successivo come mostrato in Figura~
+\end{itemize}
