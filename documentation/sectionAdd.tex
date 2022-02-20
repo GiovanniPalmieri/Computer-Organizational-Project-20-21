@@ -1,42 +1,31 @@
-\section{Descrizione Add}
-\paragraph{Descrizione}
-Il comando Add, aggiunge un nodo in coda alla lista, (ossia come ultimo elemento). 
-Dato che la lista è una lista concatenata deve essere allocato dinamicamente lo spazione per l'ultimo elemento.
-
-\paragraph{Implementazione}
-In base all'implementazione della lista concatenata l'operazione per eseguire la Add è diversa.
-Nel caso del programma non abbiamo un puntatore alla coda, perciò la prima fase della Add è trovare l'ultimo elemento.
-La ricerca dell'ultimo elemento viene effettuata scorrendo la lista, finchè non si trova un nodo che non ha il punatore al prossimo elemento.
-A questo punto deve essere allocata un area libera di memoria, e ci viene messo il dato da aggiungere.
-Dopo di che viene aggiornato il puntatore all'elemento successivo del penutlimo elemento, 
-e i puntatori all'elemento precedente e successivo dell'ultimo elemento.
-È inoltre necessario distunguere il caso in cui la lista sia vuota e inizializzare il puntatore al primo elmento.
+\section{Add}
+\subsection{Implementazione}
+Dato che la lista non ha un puntatore alla coda, ma solo un puntatore alla testa è necessario
+trovare l'ultimo elemento. Si può individuare perchè è l'unico elemento con PAHED uguale a -1.
+Una volta individuato l'ultimo elemento viene creato il nuovo nodo con PBACK uguale all'
+indirizzo dell'ultimo elemento e viene aggiornato il PAHEAD dell'ultimo elemento con 
+l'indirizzo del nuovo elemento.
+L'allocazione dello spazio in memoria viene effettuata dalla funzione 
+\textit{getPseudoRandom} descritta nella sezione successiva.
+Nel caso in cui la lista non contenga elementi e quindi il punatore al primo elemento sia
+uguale a 0, basta creare il nuovo elemento con PBACK e PAHEAD uguali a -1 e impostare
+il puntatore al primo elemento all'indirizzo del nuovo elemento.
 
 \subsection{Funzione getPseudoRandom}
-\paragraph{Descrizione}
-Come abbiamo detto nella descrizione dell'operazione è necessario trovare un area libera di memoria.
-Per fare ciò usiamo un generatore di numeri pseudorandomici. 
-\paragraph{Implementazione}
-Per generare il numero pseduo random usiamo l'LFSR (Linear-Feedback Shift Register). 
-Che permette di generare un numero pseudo casuale eseguendo uno shift a destra e sostituendo il bit vuoto 
+Per prima cosa dobbiamo generare un numero casuale nel range della memoria del programma,
+per farlo usiamo l'LFSR (Linear-Feedback Shift Register). 
+L'LFSR permette di generare un numero pseudo casuale eseguendo uno shift a destra e sostituendo il bit vuoto 
 con il risultato di una XOR dei bit.
-Per funzionare abbiamo bisogno di un \textbf{seed}, ossia di un valore iniziale. La prima volta che viene chiamata il seed 
-viene impostato come valore corrente. Poi il \textbf{newBit} vine calcolato eseguendo lo xor tra il primo,
+Per funzionare la funzione ha bisogno di un \textbf{seed}, ossia di un valore iniziale, che viene 
+impostato la prima volta che si chiama la funzione.
+ Poi il \textbf{newBit} vine calcolato eseguendo lo XOR tra il primo,
 terzo, quarto e quinto bit. A questo punto si esegue lo shift a destra del valore corrente e si sostituisce il bit 
 più valente con il \textbf{newBit}. Quest'operazione viene fatta su 16 bit, dato che risv-v usa 4 byte per indirizzare la memoria,
  ci restano i due byte più valenti da riempire. Per evitare overflow e/o sovrascritture di dati esistenti
-impostiamo i due byte a 0x00001.   
-\\
-\begin{lstlisting}[language=java,caption={Codice java algoritmo generazione psudo-casuale}, captionpos=b]
+impostiamo i due byte a 0x00001.
 
-    bool firstInvocation = true;
-    String seed = "0001011000111010";
-    String lfsr;
-    private void getPseudoRandom(){
-        if(firstInvocation){
-            lfsr = seed;
-        }
-        char newBit = 
-    }
-    
-\end{lstlisting}
+\subsection{Miglioramenti e variazioni}
+L'aggiunta del nuovo elento potrebbe essere resa più efficente salvando il puntatore 
+all'ultimo elemento, in questo modo non ci sarebbe bisogno di scorrere tutta la lista
+per trovarlo. Lo svantaggio di questa implementazione è che si deve aggiornare il 
+puntatore all'ultimo elemento ogni volta che l'ultimo elemento cambia. 

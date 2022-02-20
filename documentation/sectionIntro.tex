@@ -1,0 +1,33 @@
+\section{Introduzione}
+Il progetto prevede l'implementazione di una lista concatenata doppia. Ogni nodo 
+della lista è strutturato secondo la Tabella~\ref{tab:nodeStructure}. Nel caso in cui un nodo non abbia elemento successivo o precedente, PBACK o PAHEAD 
+vengono impostati al valore -1 (0xFFFFFFFF in complemento a due).
+\begin{table}[H]
+    \begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Nome & Dimensione & Descrizione \\
+        \hline
+        PBACK & 4 byte & Puntatore all'elemento precedente \\
+        \hline
+        DATA & 1 byte & Informazione del nodo \\
+        \hline
+        PAHEAD & 4 byte & Puntatore all'elemento successivo \\
+        \hline
+    \end{tabular}
+    \caption{Struttura nodi}
+    \label{tab:nodeStructure}
+    \end{center}
+\end{table}  
+
+La lista prevede 5 operazioni:
+\begin{itemize}
+    \item ADD (char)\@: Aggiunta di un nuovo elemento in coda alla lista con DATA=char.
+    \item DEL (char)\@: Rimuove (se presente) il primo elemento della lista con DATA=char.
+    \item PRINT\@: Stampa tutti i DATA degli elementi della lista in ordine di apparizione.
+    \item SORT\@: Ordina in modo crescente gli elementi della lista in base a DATA\@.
+    \item REV\@: Inverte gli elementi della lista.
+\end{itemize}
+
+I comandi da eseguire sono contenuti in una variabile \textit{listInput} di tipo string. 
+Sono separati da ''\texttildelow'' e possono essere presenti spazi prima e dopo la tilde.

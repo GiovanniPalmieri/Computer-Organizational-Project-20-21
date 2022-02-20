@@ -1,27 +1,27 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}Introduzione}{1}{}%
-\contentsline {section}{\numberline {2}Descrizione del ciclo principale}{2}{}%
-\contentsline {subsection}{\numberline {2.1}Riconoscimento input}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Chiamata delle operazioni}{3}{}%
-\contentsline {section}{\numberline {3}Descrizione Add}{4}{}%
-\contentsline {paragraph}{Descrizione}{4}{}%
-\contentsline {paragraph}{Implementazione}{4}{}%
-\contentsline {subsection}{\numberline {3.1}Funzione getPseudoRandom}{4}{}%
-\contentsline {paragraph}{Descrizione}{4}{}%
-\contentsline {paragraph}{Implementazione}{4}{}%
-\contentsline {section}{\numberline {4}Implementazione Sort}{6}{}%
-\contentsline {paragraph}{Descrizione}{6}{}%
-\contentsline {paragraph}{Implementazione}{6}{}%
-\contentsline {subsection}{\numberline {4.1}Funzione getMinAddress}{6}{}%
-\contentsline {subsection}{\numberline {4.2}Funzione sort}{6}{}%
-\contentsline {subsection}{\numberline {4.3}Criteri di ordinamento}{7}{}%
+\contentsline {section}{\numberline {1}Introduzione}{2}{}%
+\contentsline {section}{\numberline {2}Descrizione del ciclo principale}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Riconoscimento input}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Chiamata delle operazioni}{4}{}%
+\contentsline {section}{\numberline {3}Add}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Implementazione}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Funzione getPseudoRandom}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Miglioramenti e variazioni}{5}{}%
+\contentsline {section}{\numberline {4}Sort}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Implementazione}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Funzione getMinAddress}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Funzione sort}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Criteri di ordinamento}{7}{}%
 \contentsline {paragraph}{Descrizione}{7}{}%
 \contentsline {paragraph}{Implementazione}{7}{}%
-\contentsline {subsection}{\numberline {4.4}Funzione swap}{8}{}%
+\contentsline {subsection}{\numberline {4.5}Funzione swap}{8}{}%
 \contentsline {paragraph}{Descrizione}{8}{}%
 \contentsline {paragraph}{Implementazione}{8}{}%
-\contentsline {section}{\numberline {5}Descrizione Delete}{9}{}%
-\contentsline {paragraph}{Descrizione}{9}{}%
-\contentsline {paragraph}{Implementazione}{9}{}%
-\contentsline {paragraph}{nota}{9}{}%
+\contentsline {section}{\numberline {5}Delete}{9}{}%
+\contentsline {subsection}{\numberline {5.1}Implementazione}{9}{}%
+\contentsline {subsection}{\numberline {5.2}Miglioramenti e variazioni}{9}{}%
+\contentsline {section}{\numberline {6}Reverse}{10}{}%
+\contentsline {subsection}{\numberline {6.1}Implementazione}{10}{}%
+\contentsline {section}{\numberline {7}Print}{11}{}%
+\contentsline {subsection}{\numberline {7.1}Implementazione}{11}{}%

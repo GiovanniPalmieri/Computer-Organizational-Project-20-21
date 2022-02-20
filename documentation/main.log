@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.1)  20 FEB 2022 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.1)  20 FEB 2022 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -98,7 +98,7 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count266
 \l__pdf_internal_box=\box51
-) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.aux (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionDel.aux))
+) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.aux (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionIntro.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionDel.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionRev.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionPrint.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -164,67 +164,65 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\openout2 = `sectionIntro.aux'.
+
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionIntro.tex) [2
+
+]
 \openout2 = `sectionMainCycle.aux'.
 
  (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.tex
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 15.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 7--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--65
+Underfull \hbox (badness 10000) in paragraph at lines 45--68
 
  []
 
-[2
+[3
 
-]) [3]
+
+
+]) [4]
 \openout2 = `sectionAdd.aux'.
 
- (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Underfull \hbox (badness 10000) in paragraph at lines 20--30
-
- []
-
-[4
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.tex) [5
 
 
 
-]) [5]
+]
 \openout2 = `sectionSort.aux'.
 
  (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--22
+Underfull \hbox (badness 10000) in paragraph at lines 17--23
 
  []
 
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 25.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 26.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 25.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 26.
 
-Overfull \hbox (4.79932pt too wide) in paragraph at lines 29--30
+Overfull \hbox (4.79932pt too wide) in paragraph at lines 30--31
 [][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
 
  []
 
@@ -236,7 +234,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 <diagrams/swap.png, id=32, 783.92876pt x 229.85875pt>
 File: diagrams/swap.png Graphic file (type png)
 <use diagrams/swap.png>
-Package pdftex.def Info: diagrams/swap.png  used on input line 115.
+Package pdftex.def Info: diagrams/swap.png  used on input line 114.
 (pdftex.def)             Requested size: 313.56595pt x 91.94186pt.
 ) [8 </home/giovanni/university/Computer-Organizational-Project-20-21/documentation/diagrams/swap.png>]
 \openout2 = `sectionDel.aux'.
@@ -245,26 +243,46 @@ Package pdftex.def Info: diagrams/swap.png  used on input line 115.
 <diagrams/del-middle.png, id=38, 643.40375pt x 141.52875pt>
 File: diagrams/del-middle.png Graphic file (type png)
 <use diagrams/del-middle.png>
-Package pdftex.def Info: diagrams/del-middle.png  used on input line 24.
+Package pdftex.def Info: diagrams/del-middle.png  used on input line 22.
 (pdftex.def)             Requested size: 257.35693pt x 56.61049pt.
 ) [9
 
 
 
- </home/giovanni/university/Computer-Organizational-Project-20-21/documentation/diagrams/del-middle.png>] (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.aux (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionDel.aux)) ) 
+ </home/giovanni/university/Computer-Organizational-Project-20-21/documentation/diagrams/del-middle.png>]
+\openout2 = `sectionRev.aux'.
+
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionRev.tex
+<diagrams/reverse.png, id=43, 778.91pt x 226.8475pt>
+File: diagrams/reverse.png Graphic file (type png)
+<use diagrams/reverse.png>
+Package pdftex.def Info: diagrams/reverse.png  used on input line 9.
+(pdftex.def)             Requested size: 311.55849pt x 90.73738pt.
+) [10
+
+
+
+ </home/giovanni/university/Computer-Organizational-Project-20-21/documentation/diagrams/reverse.png>]
+\openout2 = `sectionPrint.aux'.
+
+ (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionPrint.tex) [11
+
+
+
+] (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.aux (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionIntro.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionMainCycle.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionAdd.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionSort.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionDel.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionRev.aux) (/home/giovanni/university/Computer-Organizational-Project-20-21/documentation/sectionPrint.aux)) ) 
 Here is how much of TeX's memory you used:
- 4252 strings out of 479304
- 61579 string characters out of 5869780
- 559171 words of memory out of 5000000
- 21393 multiletter control sequences out of 15000+600000
+ 4284 strings out of 479304
+ 63511 string characters out of 5869780
+ 559151 words of memory out of 5000000
+ 21403 multiletter control sequences out of 15000+600000
  409282 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,74p,298b,1639s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,8n,74p,290b,1359s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.pdf (9 pages, 101059 bytes).
+Output written on /home/giovanni/university/Computer-Organizational-Project-20-21/documentation/main.pdf (11 pages, 108549 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

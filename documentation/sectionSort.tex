@@ -1,16 +1,17 @@
-\section{Implementazione Sort}
+\section{Sort}
 
-\paragraph{Descrizione}
-L'algoritmo utilizzato è un selection sort. 
-L'algoritmo scorre tutta la lista, e ad ogni elemento lo sostituisce
- con l'elemento più piccolo, tra quelli successivi.
+\subsection{Implementazione}
+L'algoritmo scelto per l'ordinamento è il selection sort. L'algoritmo prevede di scambiare 
+ogni elemento della lista con l'elemento più piccolo tra gli elementi successivi per ogni 
+posizione della lista. È adatto all'uso nelle liste concatenate dato che non si effettua 
+mai l'accesso diretto ad una certa posizione ma si scorre sempre gli elementi. 
+Sono quindi definite le seguenti funzioni:
 
-\paragraph{Implementazione}
-L'algoritmo è composto principalmente da due funzioni. 
-\begin{enumerate}
-    \item \label{func:getMinAddress}La funzione che trova il minimo tra i nodi successivi: \textit{getMinAddress}
-    \item \label{func:sort}La funzione che per ogni nodo lo scambia con il risultato di \\getMinAdress: \textit{sort}
-\end{enumerate}
+\begin{itemize}
+    \item \textit{getMinAddress} che restituisce l'indirizzo del nodo più piccolo tra i nodi successivi
+    al nodo specificato. 
+    \item \textit{sort} che scambia un nodo con il risultato di \textit{getMinAddress}.
+\end{itemize}
 Entrambe le funzioni sono implementate ricorsivamente.
 \subsection{Funzione getMinAddress}
 La funzione getMinAddress ha due parametri, 
@@ -29,8 +30,6 @@ la funzione si richiama sostituendo al nodo corrente il nodo successivo.
             min = getMinAddress(current.getNext(), min);
         }
     }
-
-
 \end{lstlisting}
 
 \subsection{Funzione sort}
@@ -116,5 +115,4 @@ i puntatori sono una word ciuascuno conviene scambiare i dati e lasciare i punta
     \caption{Prima e dopo ordinamento con scambio di puntatori}
     \label{fig:swap}
 \end{figure}
-
 
