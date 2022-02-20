@@ -3,7 +3,7 @@
 initialSeed: .half 60
 lfsr:        .half 00
 #listInput:    .string "ADD{1} ~ DEL{1} ~ ADD{a} ~ ADD{a} ~ ADD{B} ~ ADD{;} ~ ADD{9} ~PRINT~SORT~PRINT~DEL{b} ~DEL{B}~PRINT~REV~PRINT"
-listInput: .string "DEL{c} ~ PRINT ~ ADD{C} ~PRINT~ DEL{C} ~ ADD{A} ~ ADD{B} ~ ADD{C} ~ PRINT ~ DEL{A}~PRINT~ADD{A}~DEL{B}~PRINT~DEL{C}~PRINT"
+listInput: .string "ADD{C} ~PRINT~ DEL{C} ~PRINT~ ADD{A} ~ ADD{B} ~ ADD{C} ~ PRINT ~ DEL{A}~PRINT~ADD{A}~DEL{B}~PRINT~DEL{A}~PRINT"
 
 .text    
 
@@ -292,6 +292,7 @@ exitDel:
 callPrint:
     add t0,s0,zero #metto in t0 il puntantore al nodo corrente
     addi s1,s1,6
+    beq s0,zero,exitPrint # se non ci sono elementi ritorno
 loopPrint:
     lb a0,4(t0) #leggo il valore
     li a7,11
