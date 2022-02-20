@@ -286,8 +286,7 @@ deleteList:
 
 exitDel:
     
-    j mainLoop    
-    
+    j mainLoop      
     
 callPrint:
     add t0,s0,zero #metto in t0 il puntantore al nodo corrente
